@@ -40,7 +40,7 @@ function setup() {
 
 function portada() {
     createSpan("Estás en index.html").parent("title");
-    createElement('p','Tu ánimo hoy será '+random(lorenIpsum)+', por lo que '+random(loremIpsum)).parent(loPrincipal);
+    createElement('p','Tu motivación hoy será '+random(lorenIpsum)+', por lo que '+random(loremIpsum)).parent(loPrincipal);
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
