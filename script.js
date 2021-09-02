@@ -24,7 +24,7 @@ var loPrincipal = document.querySelector("main");
 
 var lorenIpsum = ["terrible","mala","reguleke","ni mala ni buena","buenarda","sublime"];
 
-var loremIpsum = ["mejor quédate en casa","no inviertas en b*tcoin","di puchalacuestión y dale pa delante","dale las gracias al de arriba","tírate con todo, total la vida es una"];
+var loremIpsum = ["mejor quédate en casa.","no inviertas en b*tcoin.","di puchalacuestión y dale pa delante!","dale las gracias al de arriba.","tírate con todo, total la vida es una."];
 
 function setup() {
     noCanvas();
@@ -40,7 +40,7 @@ function setup() {
 
 function portada() {
     createSpan("Estás en index.html").parent("title");
-    createElement('p','Tu ánimo hoy será '+random(lorenIpsum)+', por lo que ').parent(loPrincipal);
+    createElement('p','Tu ánimo hoy será '+random(lorenIpsum)+', por lo que '+random(loremIpsum)).parent(loPrincipal);
     select("a:nth-child(1)").style("font-weight", "bold").style("color", "#000000");
 }
 
