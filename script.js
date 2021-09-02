@@ -24,6 +24,8 @@ var loPrincipal = document.querySelector("main");
 
 var lorenIpsum = ["terrible","mala","reguleke","ni mala ni buena","buenarda","sublime"];
 
+var loremIpsum = ["mejor quédate en casa","no inviertas en b*tcoin","di puchalacuestión y dale pa delante","dale las gracias al de arriba","tírate con todo, total la vida es una"];
+
 function setup() {
     noCanvas();
     createElement("h1", elSaludo).parent(elEncabezado).id("title");
@@ -44,6 +46,6 @@ function portada() {
 
 function pagina() {
     createSpan("Estás en page.html").parent("title");
-    createElement('p','Tu suerte de hoy será '+random(lorenIpsum)+' en la página.').parent(loPrincipal);
+    createElement('p','Tu suerte de hoy será '+random(lorenIpsum)+', así que '+random(loremIpsum)).parent(loPrincipal);
     select("a:nth-child(2)").style("font-weight", "bold").style("color", "#000000");
 }
